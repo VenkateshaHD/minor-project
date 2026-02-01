@@ -1,0 +1,172 @@
+.stage-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =======================
+   GOLD PROGRESS BAR
+======================= */
+
+.progress-track {
+  width: 70%;
+  height: 12px;
+  border-radius: 10px;
+  background: #3a2b05;
+  border: 2px solid #d1a208;
+  box-shadow: inset 0 0 10px #000000;
+  margin-bottom: 22px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(#ffd966, #d4a017);
+  box-shadow: 0 0 12px #ffd966;
+  transition: width .4s ease-in-out;
+}
+
+/* =======================
+   GOLD CARD PANEL
+======================= */
+
+.stage-card {
+  width: 600px;
+  padding: 28px;
+
+  background: linear-gradient(#4d3b09, #1f1603);
+  border: 3px solid #e6b74a;
+
+  border-radius: 18px;
+  box-shadow:
+    0 0 35px rgba(0,0,0,.9),
+    inset 0 0 25px rgba(255,221,91,.25);
+
+  color: #fff8dc;
+}
+
+/* =======================
+   TITLES + TEXT
+======================= */
+
+.stage-title {
+  color: #ffde6a;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-shadow: 0 0 8px #000;
+}
+
+.stage-content h2 {
+  color: #ffe8a3;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px #000;
+}
+
+.stage-content {
+  text-align: center;
+}
+
+/* =======================
+   INPUTS + SELECTS
+======================= */
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  background: #2b2309;
+  border: 1px solid #c9a032;
+
+  color: #fff7d1;
+
+  border-radius: 10px;
+  font-weight: 600;
+
+  box-shadow: inset 0 0 10px #000;
+}
+
+select option {
+  background: #2a2106;
+  color: #ffefc4;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+
+.gold-btn {
+  width: 80%;
+  padding: 12px;
+
+  margin-top: 14px;
+
+  background: linear-gradient(#ffd966, #c99a1c);
+  border: none;
+
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #3a2b05;
+
+  box-shadow: 0 0 12px #ffdd78;
+}
+
+.gold-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.back-btn {
+  padding: 10px;
+  background: linear-gradient(#5c4a14, #2c2309);
+  border: 1px solid #c9a032;
+  border-radius: 10px;
+  margin-top: 14px;
+
+  color: #ffeec2;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: inset 0 0 8px #000;
+  margin-right: 10px;
+  width: 20%;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+/* =======================
+   SUMMARY BOX
+======================= */
+
+.summary-box {
+  margin-top: 12px;
+  padding: 12px;
+
+  border: 2px solid #cfa640;
+  border-radius: 12px;
+
+  background: linear-gradient(#332607, #1c1504);
+  box-shadow: inset 0 0 15px #000;
+
+  color: #fff3cb;
+}
+
+/* =======================
+   ANIMATION
+======================= */
+
+.fade {
+  animation: fadeIn .4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

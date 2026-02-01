@@ -1,0 +1,25 @@
+.nav-bar {
+  padding: 14px 30px;
+  background: linear-gradient(#020617, #020617);
+  border-bottom: 3px solid var(--gold-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar h2 {
+  color: var(--gold);
+}
+
+.nav-links a,
+.nav-links span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links span:hover,
+.nav-links a:hover {
+  color: var(--gold);
+}

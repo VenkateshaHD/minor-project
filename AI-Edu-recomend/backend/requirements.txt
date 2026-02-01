@@ -1,0 +1,24 @@
+fastapi==0.115.0
+uvicorn==0.30.1
+
+# ML (LIGHTWEIGHT)
+scikit-learn==1.4.2
+numpy==1.26.4
+
+# Gemini
+google-generativeai==0.8.6
+
+# Web
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# DB
+pymongo==4.7.3
+
+# Utils
+python-dotenv==1.0.1
+
+pydantic[email]
+passlib[bcrypt]
+
+
