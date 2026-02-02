@@ -19,7 +19,8 @@ def ranked_resources(user_id: str= Query(...), topic: str = Query(...), experien
 
     youtube = fetch_youtube_resources(topic, limit=6)
     web = fetch_web_results(topic, limit=6)
-    all_resources = youtube + web
+    all_resources = youtube 
+    # all_resources = youtube + web
 
     filtered = filter_resources(all_resources, user)
     ranked = rank_resources(topic, filtered, "basic")

@@ -41,30 +41,34 @@ import requests
 from typing import List, Dict
 from app.core.config import settings
 
+# def fetch_web_results(topic: str, limit: int = 5) -> List[Dict]:
+#     if not settings.GOOGLE_API_KEY or not settings.GOOGLE_CSE_ID:
+#         return []
+
+#     params = {
+#         "key": settings.GOOGLE_API_KEY,
+#         "cx": settings.GOOGLE_CSE_ID,
+#         "q": f"{topic} course tutorial learning",
+#         "num": limit
+#     }
+
+#     r = requests.get("https://www.googleapis.com/customsearch/v1", params=params, timeout=10)
+#     r.raise_for_status()
+
+#     results = []
+#     for it in r.json().get("items", []):
+#         results.append({
+#             "type": "web",
+#             "title": it.get("title"),
+#             "url": it.get("link"),
+#             "description": it.get("snippet"),
+#             "channel_or_site": it.get("displayLink"),
+#             "source_id": it.get("link"),
+#             "topic": topic
+#         })
+
+#     return results
+
 def fetch_web_results(topic: str, limit: int = 5) -> List[Dict]:
-    if not settings.GOOGLE_API_KEY or not settings.GOOGLE_CSE_ID:
-        return []
-
-    params = {
-        "key": settings.GOOGLE_API_KEY,
-        "cx": settings.GOOGLE_CSE_ID,
-        "q": f"{topic} course tutorial learning",
-        "num": limit
-    }
-
-    r = requests.get("https://www.googleapis.com/customsearch/v1", params=params, timeout=10)
-    r.raise_for_status()
-
     results = []
-    for it in r.json().get("items", []):
-        results.append({
-            "type": "web",
-            "title": it.get("title"),
-            "url": it.get("link"),
-            "description": it.get("snippet"),
-            "channel_or_site": it.get("displayLink"),
-            "source_id": it.get("link"),
-            "topic": topic
-        })
 
-    return results
