@@ -481,8 +481,8 @@ npm test
 
 ## 👥 Contributors
 
-[Add contributor information here]
-
+Prateek Gajanan Bhandari
+Venkatesha H D
 ---
 
-**Need Help?** Open an issue or contact the development team.
+
