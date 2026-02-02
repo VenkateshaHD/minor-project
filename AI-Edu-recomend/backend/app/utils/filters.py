@@ -3,7 +3,7 @@ def filter_resources(resources, user_profile):
 
     for r in resources:
         # Remove reddit, quora
-        if "reddit" in r["url"] or "quora" in r["url"]:
+        if "reddit.com" in r["url"] or "quora.com" in r["url"] or "medium.com" in r["url"] or "stackexchange.com" in r["url"] or "stackoverflow.com" in r["url"] or "github.com" in r["url"] or "udemy.com" in r["url"] or "exampro.com" in r["url"]:
             continue
 
         # Remove short videos

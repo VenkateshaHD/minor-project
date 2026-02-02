@@ -1,7 +1,7 @@
 import api from "./axios";
 
 export const getProfile = () =>
-  api.get("/users/profile");
+    api.get("/users/profile");
 
-export const updateProfile = (data,id) =>
-  api.post(`/onboarding/${id}`, data);
+export const updateProfile = (data) =>
+    api.put("/users/profile", data);
